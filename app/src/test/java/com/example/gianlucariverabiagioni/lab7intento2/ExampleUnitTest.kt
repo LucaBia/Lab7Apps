@@ -1,4 +1,4 @@
-package com.example.gianlucariverabiagioni.lab7
+package com.example.gianlucariverabiagioni.lab7intento2
 
 import org.junit.Test
 
