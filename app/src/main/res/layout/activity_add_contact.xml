@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout" android:orientation="vertical">
+
+    <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre: "
+            android:textColorHint="@color/colorPrimaryDark"
+            android:inputType="text"/>
+
+    <EditText
+            android:id="@+id/edit_text_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="Correo Electronico:"
+            android:inputType="text|textEmailAddress" android:paddingTop="20dp"/>
+
+    <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="Telefono:"
+            android:inputType="phone" android:paddingTop="20dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:text="Prioridad contacto:"
+            android:textAppearance="@android:style/TextAppearance.Medium" android:paddingTop="20dp"/>
+    <NumberPicker
+            android:id="@+id/prioritySelec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginLeft="160dp"/>
+    <Button
+            android:text="Regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnBack" android:onClick="back"/>
+
+</LinearLayout>

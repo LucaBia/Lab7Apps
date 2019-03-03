@@ -10,6 +10,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.example.gianlucariverabiagioni.lab7intento2"
         minSdkVersion 19
         targetSdkVersion 28
@@ -37,7 +38,7 @@ dependencies {
     def room_version = "2.1.0-alpha02"
     def design_version = "28.0.0"
 
-    
+
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 
     //implementacion de  lo necesario para utilizar room

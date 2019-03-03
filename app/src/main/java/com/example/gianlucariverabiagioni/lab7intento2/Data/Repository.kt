@@ -39,8 +39,8 @@ class Repository(application: Application) {
     }
 
     companion object {
-        private class InsertContactAsyncTask(contactDao: Query) : AsyncTask<Contact, Unit, Unit>() {
-            val contactDao = contactDao
+        private class InsertContactAsyncTask(qQuery: Query) : AsyncTask<Contact, Unit, Unit>() {
+            val contactDao = qQuery
 
             override fun doInBackground(vararg p0: Contact?) {
                 contactDao.insert(p0[0]!!)
